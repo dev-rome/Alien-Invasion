@@ -8,14 +8,17 @@ def run_game():
     pygame.init()
     screen = pygame.display.set_mode((1200, 800))
     pygame.display.set_caption("Alien Invasion")
-    # Main loop for game
+    # background color.
+    bg_color = (230, 230, 230)
+    # Main loop for game.
     while True:
         # Watch for keyboard and mouse events.
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
-
-        # Make recent drawn screen visible
+        # Redraw the creen during each pass through the loop.
+        screen.fill(bg_color)
+        # Make recent drawn screen visible.
         pygame.display.flip()
 
 
