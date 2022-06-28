@@ -23,7 +23,7 @@ def run_game():
     aliens = Group()
 
     # Create the fleet if aliens.
-    gf.create_fleet(ai_settings, screen, aliens)
+    gf.create_fleet(ai_settings, screen, ship, aliens)
 
     # Main loop for game.
     while True:
