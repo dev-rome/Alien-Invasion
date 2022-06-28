@@ -99,3 +99,7 @@ def check_keyup_events(event, ship):
         ship.moving_right = False
     elif event.key == pygame.K_LEFT:
         ship.moving_left = False
+
+
+def update_aliens(aliens):
+    aliens.update()
